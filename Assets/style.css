@@ -1,0 +1,34 @@
+
+
+header h1{
+    display: flex;
+    font-size: revert;
+    background-color: aqua;
+    padding: 25px;
+    padding-left: 35rem;
+}
+
+#Day-1{
+    color: blueviolet;
+    background-color: rgb(255, 127, 127);
+}
+
+#Day-2{
+    color: aqua;
+    background-color: rgb(255, 127, 127);
+}
+
+#Day-3{
+    color: bisque;
+    background-color: rgb(255, 127, 127);
+}
+
+#Day-4{
+    color: chartreuse;
+    background-color: rgb(255, 127, 127);
+}
+
+#Day-5{
+    color: blue;
+    background-color: rgb(255, 127, 127);
+}

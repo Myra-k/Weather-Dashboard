@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css"/>
     <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <aside>
+            <div class="search-area">
+                <input type="text" id="location" placeholder="Enter the Location">
+                <button id="search">search</button>
+                <div id="error"></div>
+            </div>
+            <div class="recent-area" id="recent-location"></div>
+        </aside>
+
+        <section>
+            <div id="weather">
+                    <div class="weather-loc" id="loc-name">Enter a Location</div>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <span>Temperature:</span>
+                        <span id="temp_val"></span>
+                    </div>
+                    <div class="wind">
+                        <span>Wind:</span>
+                        <span id="wind_val"></span>
+                    </div>
+                    <div class="humidity">
+                        <span>Humidity:</span>
+                        <span id="humid_val"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="forecast">
+                <h1>5-Day-Forecast</h1>
+                <div id="forecast-day"></div>
+
+
+                <div id="Day-1">
+                <div class="temperature">
+                    <span>Temperature:</span>
+                    <span id="temp_val"></span>
+                </div>
+                <div class="wind">
+                    <span>Wind:</span>
+                    <span id="wind_val"></span>
+                </div>
+                <div class="humidity">
+                    <span>Humidity:</span>
+                    <span id="humid_val"></span>
+                </div>
+
+                <div id="Day-2">
+                <div class="temperature">
+                    <span>Temperature:</span>
+                    <span id="temp_val"></span>
+                </div>
+                <div class="wind">
+                    <span>Wind:</span>
+                    <span id="wind_val"></span>
+                </div>
+                <div class="humidity">
+                    <span>Humidity:</span>
+                    <span id="humid_val"></span>
+                </div>
+
+                <div id="Day-3">
+                <div class="temperature">
+                    <span>Temperature:</span>
+                    <span id="temp_val"></span>
+                </div>
+                <div class="wind">
+                    <span>Wind:</span>
+                    <span id="wind_val"></span>
+                </div>
+                <div class="humidity">
+                    <span>Humidity:</span>
+                    <span id="humid_val"></span>
+                </div>
+
+                <div id="Day-4">
+                <div class="temperature">
+                    <span>Temperature:</span>
+                    <span id="temp_val"></span>
+                </div>
+                <div class="wind">
+                    <span>Wind:</span>
+                    <span id="wind_val"></span>
+                </div>
+                <div class="humidity">
+                    <span>Humidity:</span>
+                    <span id="humid_val"></span>
+                </div>
+
+                <div id="Day-5">
+                <div class="temperature">
+                    <span>Temperature:</span>
+                    <span id="temp_val"></span>
+                </div>
+                <div class="wind">
+                    <span>Wind:</span>
+                    <span id="wind_val"></span>
+                </div>
+                <div class="humidity">
+                    <span>Humidity:</span>
+                    <span id="humid_val"></span>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
 </body>
+<script src="./Assets/script.js"></script>
 </html>
