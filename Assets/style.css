@@ -8,9 +8,26 @@ header h1{
     padding-left: 35rem;
 }
 
-#Day-1{
+
+#forecast{
+    display: none;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #Day-1{
     color: blueviolet;
     background-color: rgb(255, 127, 127);
+
 }
 
 #Day-2{
@@ -31,4 +48,4 @@ header h1{
 #Day-5{
     color: blue;
     background-color: rgb(255, 127, 127);
-}
+} */

@@ -62,14 +62,14 @@ const lookupLocation = (search) => {
                     
                 });
 
-                displayWeather(myData);
+                displayWeather(data);
         });
 }
 
 var displayCurrentWeather = (weatherData) => {
     let currWeather = weatherData.current;
 
-    
+
 
 }
 
