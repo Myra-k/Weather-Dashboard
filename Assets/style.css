@@ -113,14 +113,14 @@ aside .recent-section .recent{
 }
 
 #forecast{
-    display: none;
+    /*display: none;*/
     margin-top: 25px;
     background-color: #ccc;
     line-height: 1.5rem;
 }
 
 
-#forecast .forecast-day{
+ #weather-info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

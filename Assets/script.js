@@ -54,21 +54,21 @@ const lookupLocation = (search) => {
 
 
             // the Weather for the cached location
-            var apiUrl = `${baseURL}/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${weatherApiKey}`;
-            console.log(apiUrl);
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
+             var apiUrl = `${baseURL}/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${weatherApiKey}`;
+             console.log(apiUrl);
+             fetch(apiUrl)
+                 .then(response => response.json())
+                 .then(data => {
 
-                    console.log(data);
+                     console.log(data);
 
                    
 
-                    displayCurrentWeather(data);
+                     displayCurrentWeather(data);
 
-                    displayWeatherForecast(data);
+                     displayWeatherForecast(data);
                     
-                });
+                 });
 
                 displayWeather(myData);
         });
@@ -80,7 +80,7 @@ var displayCurrentWeather = (weatherData) => {
     document.getElementById('temp_val').textContent = `${currWeather.temp}°`;
     document.getElementById('humid_val').textContent = `${currWeather.wind_speed}MPH`;
     document.getElementById('wind_val').textContent = `${currWeather.humidity}%`;
-}
+ }
 
 var displayWeatherForecast = (weatherData) => {
 
@@ -93,6 +93,26 @@ var displayWeatherForecast = (weatherData) => {
 
     for (let i = 0; i < dailyForecastNum; i++) {
         
+        var newForecast=document.getElementById('div');
+        newForecast.classList.add('forecast-day');
+        newForecast.innerHTML = `<div class="weather-info">
+        <div class="date">
+            <span>${day}</span>
+        </div>
+        <div class="temperature">
+           <span>${temp}</span>
+       </div>
+       <div class="wind">
+           <span>${wind}</span>
+       </div>
+      <div class="humidity">
+          <span>${humidity}</span>
+     </div> 
+     </div>`;
+
+     forecastlist.appendChild(newForecast);
+
+
         var dailyforecast = dailyData[i];
         var day = new Date(dailyforecast.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
         var temp = `${dailyforecast.temp.day}°`;
@@ -102,19 +122,19 @@ var displayWeatherForecast = (weatherData) => {
        
     }
 
-}
+ }
 
-const getTheWeather = (lat, lon) => {
+ const getTheWeather = (lat, lon) => {
 
-    var apiUrl = `${baseURL}/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${weatherApiKey}`;
+     var apiUrl = `${baseURL}/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${weatherApiKey}`;
 
-    fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-        displayCurrentWeather(data);
+     fetch(apiUrl)
+     .then(response => response.json())
+     .then(data => {
+         displayCurrentWeather(data);
 
-        displayWeatherForecast(data);
-    })
+         displayWeatherForecast(data);
+     })
 }
 
 var displayWeather = (weatherData) => {
