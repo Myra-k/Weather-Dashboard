@@ -1,6 +1,6 @@
 var dailyForecastNum = 5;
 var baseURL = 'http://api.openweathermap.org';
-var weatherApiKey = "d88475fbbf0b433a0f9e5f2aa5fbe29a";
+var weatherApiKey = "3770aa61038a0816864d556d797ecb9f";
 
 
 var forecasts = document.getElementById("forecast-day")
@@ -107,49 +107,50 @@ var displayWeatherForecast = (weatherData) => {
 
     var dailyData = weatherData.daily;
 
-    //     var day1 = new Date(dailyforecast.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
+    //     var day1 = new Date(dailyForecastNum.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
     // console.log(day1);
-    //     $('#day1day_value').text(day1);
-    //     document.getElementById('day1temp_vale').textContent=`${dailyForecastNum.temp.day}•`;
+    //     // $('#Day-1').text(day1);
+    //     document.getElementById('Day-1Val').textContent=`${dailyForecastNum.temp.day}•`;
 
-    // document.getElementById('forecast').style.display ='block';
+    document.getElementById('forecast').style.display ='block';
+    document.getElementById('Day-1').style.display='block';
 
-    // var forecastlist = document.getElementById('forecast-day');
-    // forecastlist.innerHTML = '';
+    var forecastlist = document.getElementById('forecast-day');
+    forecastlist.innerHTML = '';
 
         for (let i = 0; i < dailyForecastNum; i++) {
+       
+            // forecasts.innerHTML += `<div class="fivedays"><p>${math.floor(((data.daily[i].temp.max)-32)*(5/9))}</p><p>${data.daily[i].wind_speed}</p>`;
+        //   var newForecast=document.getElementById('div');
+            // newForecast.classList.add('forecast-day');
+        //     newForecast.innerHTML = `<div class="weather-info">
+        //     <div class="date">
+        //         <span>${day}</span>
+        //     </div>
+        //     <div class="temperature">
+        //        <span>${temp}</span>
+        //    </div>
+        //    <div class="wind">
+        //        <span>${wind}</span>
+        //    </div>
+        //   <div class="humidity">
+        //       <span>${humidity}</span>
+        //  </div> 
+        //  </div>`;
 
-            forecasts.innerHTML += `<div class="fivedays"><p>${math.floor(((data.daily[i].temp.max)-32)*(5/9))}</p><p>${data.daily[i].wind_speed}</p>`;
-  //         var newForecast=document.getElementById('div');
-    //         newForecast.classList.add('forecast-day');
-    //         newForecast.innerHTML = `<div class="weather-info">
-    //         <div class="date">
-    //             <span>${day}</span>
-    //         </div>
-    //         <div class="temperature">
-    //            <span>${temp}</span>
-    //        </div>
-    //        <div class="wind">
-    //            <span>${wind}</span>
-    //        </div>
-    //       <div class="humidity">
-    //           <span>${humidity}</span>
-    //      </div> 
-    //      </div>`;
-
-    //      forecastlist.appendChild(newForecast);
+        //  forecastlist.appendChild(newForecast);
 
 
-    //         var dailyforecast = dailyData[i];
-    //         var day = new Date(dailyforecast.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
-    //         var temp = `${dailyforecast.temp.day}°`;
-    //         var humidity = `${dailyforecast.humidity}%`;
-    //         var wind= `${dailyforecast.wind_speed}MPH`;
+            var dailyforecast = dailyData[i];
+            var day = new Date(dailyforecast.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
+            var temp = `${dailyforecast.temp.day}°`;
+            var humidity = `${dailyforecast.humidity}%`;
+            var wind= `${dailyforecast.wind_speed}MPH`;
 
 
         }
 
-}
+ }
 
 const getTheWeather = (lat, lon) => {
 
