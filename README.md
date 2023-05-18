@@ -26,7 +26,7 @@ To use this webpage, you can go to the search bar and then input a city/place yo
 
 ## Review
 
-* URL Of Deployed Application 
+* URL Of Deployed Application (https://myra-k.github.io/Weather-Dashboard/)
 
 * URL Of Github Repository (https://github.com/Myra-k/Weather-Dashboard.git)
 
