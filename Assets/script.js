@@ -1,5 +1,5 @@
 var dailyForecastNum = 5;
-var baseURL = "http://api.openweathermap.org";
+var baseURL = 'http://api.openweathermap.org';
 var weatherApiKey = "d88475fbbf0b433a0f9e5f2aa5fbe29a";
 
 
@@ -60,13 +60,13 @@ const lookupLocation = (search) => {
                 // var lon = data[0].lon;
 
 
-                // var myData = {
+                // var mydata = {
                 //     name: data[0].name,
                 //     country: data[0].country,
                 //     lat: data[0].lat,
                 //     lon: data[0].lon
 
-
+                // }
                 // console.log(myData);
 
 
@@ -98,9 +98,9 @@ const lookupLocation = (search) => {
 var displayCurrentWeather = (weatherData) => {
     let currWeather = weatherData.current;
 
-    document.getElementById('temp_val').textContent = `${currWeather.temp}°`;
-    document.getElementById('humid_val').textContent = `${currWeather.wind_speed}MPH`;
-    document.getElementById('wind_val').textContent = `${currWeather.humidity}%`;
+    document.getElementById('tempVal').textContent = `${currWeather.temp}°`;
+    document.getElementById('humidVal').textContent = `${currWeather.wind_speed}MPH`;
+    document.getElementById('windVal').textContent = `${currWeather.humidity}%`;
 }
 
 var displayWeatherForecast = (weatherData) => {
@@ -117,9 +117,10 @@ var displayWeatherForecast = (weatherData) => {
     // var forecastlist = document.getElementById('forecast-day');
     // forecastlist.innerHTML = '';
 
-    //     for (let i = 0; i < dailyForecastNum; i++) {
+        for (let i = 0; i < dailyForecastNum; i++) {
 
-    //         var newForecast=document.getElementById('div');
+            forecasts.innerHTML += `<div class="fivedays"><p>${math.floor(((data.daily[i].temp.max)-32)*(5/9))}</p><p>${data.daily[i].wind_speed}</p>`;
+  //         var newForecast=document.getElementById('div');
     //         newForecast.classList.add('forecast-day');
     //         newForecast.innerHTML = `<div class="weather-info">
     //         <div class="date">
@@ -146,7 +147,7 @@ var displayWeatherForecast = (weatherData) => {
     //         var wind= `${dailyforecast.wind_speed}MPH`;
 
 
-    //     }
+        }
 
 }
 
