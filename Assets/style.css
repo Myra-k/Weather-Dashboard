@@ -30,7 +30,7 @@ to {background-position: 100px 0px;background-size:2750px;}
 header h1{
     display: flex;
     font-size: revert;
-    background-color: #a4bacd;
+    background-color: #8395a5;
     padding: 25px;
     padding-left: 35rem;
     color: white;
@@ -52,8 +52,8 @@ aside {
     margin-top: 20px;
     width: 25%;
     border-radius: 7px;
-    box-shadow: 15px 15px 30px #bebebe,
-             -15px -1px 30px #ffffff;
+    /* box-shadow: 15px 15px 30px #bebebe,
+             -1px -1px 30px #ffffff; */
     /* background-color: aliceblue; */
     background: #e0e0e0;
     height: 14rem;

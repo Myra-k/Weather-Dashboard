@@ -9,7 +9,7 @@ This website is a place where you can search for the weather forecast for today 
 ## Deployed page
 
 
-![Deployed page screenshot](./Assets/Screenshot%202023-05-18%20at%2023.06.07.png)
+![Deployed page screenshot](./Assets/Screenshot%202023-05-31%20at%2018.25.54.png)
 
 # Installation
 
