@@ -30,7 +30,7 @@ to {background-position: 100px 0px;background-size:2750px;}
 header h1{
     display: flex;
     font-size: revert;
-    background-color: #63a8e4;
+    background-color: #a4bacd;
     padding: 25px;
     padding-left: 35rem;
     color: white;
@@ -173,7 +173,7 @@ h1{
     background-color: #ccc;
     line-height: 1.5rem;
     border-radius: 8px;
-    
+
 }
 
 
