@@ -109,16 +109,18 @@ var displayWeatherForecast = (weatherData) => {
 
     //     var day1 = new Date(dailyForecastNum.dt * 1000).toLocaleDateString('en-GB', { weekday: 'long'});
     // console.log(day1);
-    //     // $('#Day-1').text(day1);
-    //     document.getElementById('Day-1Val').textContent=`${dailyForecastNum.temp.day}•`;
+        // $('#Day-1').text(day1);
+        // document.getElementById('Day-1').textContent=`${dailyForecastNum.tempVal}•`;
 
     document.getElementById('forecast').style.display ='block';
     document.getElementById('Day-1').style.display='block';
 
     var forecastlist = document.getElementById('forecast-day');
     forecastlist.innerHTML = '';
+    
 
         for (let i = 0; i < dailyForecastNum; i++) {
+
        
             // forecasts.innerHTML += `<div class="fivedays"><p>${math.floor(((data.daily[i].temp.max)-32)*(5/9))}</p><p>${data.daily[i].wind_speed}</p>`;
         //   var newForecast=document.getElementById('div');
