@@ -113,64 +113,14 @@ aside .recent-section .recent{
 }
 
 #forecast{
-    display: none;
+    /* display: none; */
     margin-top: 25px;
     background-color: #ccc;
     line-height: 1.5rem;
 }
 
 
- #weather-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#forecast .forecast-day .weather-info {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5rem;
-    padding: 10px;
-    color: #eee;
-}
 
 
 
 
-
-
-
-
-
- #Day-1{
-    color: blueviolet;
-    margin-top: 5px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: aliceblue;
-    box-shadow: 5px 5px #ccc;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#Day-2{
-    color: aqua;
-   
-}
-
-#Day-3{
-    color: bisque;
-  
-}
-
-#Day-4{
-    color: chartreuse;
-   
-}
-
-#Day-5{
-    color: blue;
-    
-} 
